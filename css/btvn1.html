@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập 1 - Rikkeiedu</title>
+    
+    <style>
+        /* Reset cài đặt mặc định */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            padding: 20px;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Khung chứa toàn bộ nội dung căn giữa */
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Thanh tiêu đề màu xám đậm */
+        h1 {
+            background-color: #424953;
+            color: white;
+            padding: 12px 0;
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+
+        /* Đoạn văn mô tả */
+        .description {
+            font-size: 13px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        /* Khung chứa ảnh và dòng chữ chú thích */
+        .image-box {
+            display: inline-block;
+        }
+
+        /* Kiểu dáng cho hình ảnh */
+        .image-box img {
+            width: 200px;
+            height: 280px;
+            object-fit: cover; /* Giúp ảnh không bị méo */
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Chú thích dưới ảnh */
+        .caption {
+            font-size: 13px;
+            color: #333333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Tiêu đề chính -->
+        <h1>Chào mừng đến với trang web của tôi</h1>
+        
+        <!-- Đoạn văn mô tả -->
+        <p class="description">
+            Đây là trang web đầu tiên của tôi. Tôi đang học lập trình web và đây là sản phẩm đầu tiên của tôi.
+        </p>
+        
+        <!-- Khối hiển thị hình ảnh -->
+        <div class="image-box">
+            <!-- Đã chèn sẵn một link ảnh phong cảnh online mặc định -->
+            <img src="anhbtvn.jpg" alt="Hình ảnh phong cảnh">
+            <p class="caption">Trang web được tạo bởi tôi</p>
+        </div>
+    </div>
+
+</body>
+</html>

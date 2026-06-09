@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trích dẫn nổi bật</title>
+    <style>
+        /* Căn giữa toàn bộ nội dung trên màn hình */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Khung chứa nội dung */
+        .container {
+            text-align: center;
+            background-color: #fafbfc;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Tiêu đề màu xanh đậm */
+        h2 {
+            color: #3b5998;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        /* Nội dung trích dẫn */
+        p {
+            color: #333333;
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        /* Trạng thái ban đầu của nút */
+        .btn-read-more {
+            background-color: transparent;
+            color: #333333;
+            border: 1px solid #333333;
+            padding: 10px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hiệu ứng khi di chuột vào nút (Hover) */
+        .btn-read-more:hover {
+            background-color: #2e7d32; /* Màu xanh lá */
+            color: #ffffff;            /* Chữ màu trắng */
+            border-color: #2e7d32;     /* Viền đổi sang xanh lá */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Trích dẫn nổi bật</h2>
+        <p>“Kiến thức là sức mạnh.”</p>
+        <button class="btn-read-more">Đọc thêm</button>
+    </div>
+
+</body>
+</html>
