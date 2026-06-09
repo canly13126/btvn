@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Cảm ơn anh ❤️</title>
+    <style>
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; background: #1a1a1a; margin: 0; font-family: Arial, sans-serif; overflow: hidden; }
+        
+        .heart-container {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.2s ease;
+        }
+        .outer-heart {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            fill: #ff4757;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inner-white-heart {
+            position: absolute;
+            width: 90%; 
+            height: 90%;
+            fill: #ffffff;
+        }
+        .core-heart {
+            position: absolute;
+            width: 80%; 
+            height: 80%;
+            fill: #ff4757;
+            transition: fill 0.1s ease;
+        }
+
+        .text {
+            position: absolute;
+            color: white;
+            font-size: 1.7rem;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+            z-index: 10;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+        }
+
+        .heart-container.active {
+            transform: scale(0.92);
+        }
+        .heart-container.active .core-heart,
+        .heart-container.active .outer-heart {
+            animation: flashColor 0.4s ease-in-out;
+        }
+
+        .heart-container.active .text {
+            transform: scale(1.4);
+        }
+        @keyframes flashColor {
+            0%, 100% { fill: #ff4757; }
+            50% { fill: #ff6b81; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="heart-container" id="heartBtn">
+        <svg class="outer-heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <svg class="inner-white-heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <svg class="core-heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        
+        <div class="text">CẢM ƠN ANH❤️</div>
+    </div>
+
+    <script>
+        const heartBtn = document.getElementById('heartBtn');
+
+        heartBtn.addEventListener('click', () => {
+            heartBtn.classList.remove('active');
+            void heartBtn.offsetWidth; // Reset animation để bấm liên tục được
+            heartBtn.classList.add('active');
+        });
+
+        heartBtn.addEventListener('animationend', () => {
+            heartBtn.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

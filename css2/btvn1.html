@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Border trong CSS</title>
+    <style>
+        /* Căn giữa nút bấm trên màn hình cho dễ nhìn */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Định dạng nút Submit */
+        .submit-btn {
+            background-color: #e0e0e0; /* Màu nền xám nhạt */
+            color: #4a148c;            /* Màu chữ tím đậm */
+            font-size: 24px;           /* Kích thước chữ lớn */
+            font-weight: bold;         /* Chữ in đậm */
+            padding: 10px 30px;        /* Khoảng cách đệm bên trong */
+            cursor: pointer;
+
+            /* Tùy chỉnh border riêng cho từng cạnh theo ảnh */
+            border-top: 5px solid #4a148c;    /* Cạnh trên: nét liền, màu tím */
+            border-bottom: 5px solid #2e7d32; /* Cạnh dưới: nét liền, màu xanh lá */
+            border-left: 5px solid #ff1744;   /* Cạnh trái: nét liền, màu đỏ/hồng */
+            border-right: 5px dotted #2979ff; /* Cạnh phải: nét chấm bi, màu xanh dương */
+        }
+    </style>
+</head>
+<body>
+
+    <button class="submit-btn">Submit</button>
+
+</body>
+</html>

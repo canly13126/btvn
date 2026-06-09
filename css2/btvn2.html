@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Hover List Item</title>
+    <style>
+        /* Định dạng chung cho danh sách */
+        .list-container {
+            width: 500px;
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Trạng thái mặc định trước khi hover */
+        .list-container li {
+            background-color: #b0b5b9; /* Màu xám sáng */
+            color: #d1d5db;            /* Chữ màu xám nhạt */
+            padding: 15px 20px;
+            margin-bottom: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease; /* Hiệu ứng mượt mà */
+            cursor: pointer;
+        }
+
+        /* Trạng thái khi di chuột qua (Hover) */
+        .list-container li:hover {
+            background-color: #5a6268; /* Đổi sang màu xám đậm */
+            color: #ffffff;            /* Đữ đổi sang màu trắng */
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="list-container">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+</body>
+</html>
